@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:ital,font-size=50px,wght@0,700;1,400&display=swap');
+
+
+.intro {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --font-body: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --bg-default: #212121;
+    --bg-destak: #2d2d2d;
+    --font-color: #fff;
+    --font-hlight: #006eff;
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    color: var(--font-color);
+    background-color: var(--bg-default);
+}
+
+a {
+    color: var(--font-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.barra:hover {
+    transition: .3s ease-in-out;
+    color: var(--font-hlight);
+}
+
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: var(--bg-destak);
+}
+
+header span {
+    color: var(--font-hlight);
+}
+
+header h1 {
+    color: var(--font-hlight);
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav li:first-child {
+    padding-left: 3rem;
+}
+
+nav li:last-child {
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 3rem;
+}
+
+.hero {
+    padding-top: 60px;
+    height: 20rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    height: 120%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/d3/3e/99/d33e99935b6b95ceb0bb34184e426cad.jpg");
+    background-position-y: -200px;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.5);
+    box-shadow: inset 0 -100px 100px var(--bg-default);
+}
+
+.icone {
+    fill: white;
+    vertical-align: -7px;
+    padding-right: 10px;
+    width: 13rem;
+    height: 13rem;
+    padding-left: 15px;
+}
+
+
+.info {
+    padding-top: 40px;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.poster {
+    padding-top: 60px;
+    padding-bottom: 20rem;
+    height: 25rem;
+    position: relative;
+}
+
+.poster::before {
+    content: '';
+    height: 120%;
+    width: 100%;
+    background-image: url("https://www.themoviedb.org/t/p/original/kiJ0yEb70xEj8uDhhDYkvLgxSzv.jpg");
+    background-position-y: -75px;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.5);
+    box-shadow: inset 0 -100px 100px var(--bg-default);
+}
+
+.hero p {
+    font-weight: 700;
+    font-size: 3.6rem;
+    text-shadow: 0px 4px 4px #000000;
+    padding: 3rem 2rem;
+}
+
+h2 {
+    border-left: 4px solid var(--font-hlight);
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.secao-alunos {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    background-color: var(--bg-destak);
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.nome {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.rm {
+    padding-top: 10px;
+    color: var(--font-hlight);
+}
+
+.sala {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
